@@ -16,7 +16,7 @@ public class ItensCafe {
         this.poCafe = bule;
     }
 
-    public boolean verificaItens() {
+    public boolean verificarItens() {
         return poCafe && agua && fogo && coador && bule;
         
     }

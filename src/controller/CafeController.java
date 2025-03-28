@@ -5,19 +5,19 @@ import util.Utilitarios;
 import view.CafeView;
 
 public class CafeController {
-    CafeView = new CafeView();
+    CafeView view = new CafeView();
     public void iniciarPreparoCafe() {
         ItensCafe itens = new ItensCafe(
 
-        view.perguntaItem("Pó de Café")
-        view.perguntaItem("Àgua")
-        view.perguntaItem("Fogo")
-        view.perguntaItem("Coador")
+        view.perguntaItem("Pó de Café"),
+        view.perguntaItem("Àgua"),
+        view.perguntaItem("Fogo"),
+        view.perguntaItem("Coador"),
         view.perguntaItem("Bule")
         );
         
-        if(itens.verificaItens()) {
-            preparaCafe(); 
+        if(itens.verificarItens()) {
+            prepararCafe(); 
         } else {
             view.exibirMensagem("Não é possível fazer o café, pois faltam alguns itens!");
         }
