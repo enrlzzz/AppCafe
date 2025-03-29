@@ -10,10 +10,10 @@ public class ItensCafe {
 
     public ItensCafe(Boolean poCafe, boolean agua, boolean fogo, boolean coador, boolean bule) {
         this.poCafe = poCafe;
-        this.poCafe = agua;
-        this.poCafe = fogo;
-        this.poCafe = coador;
-        this.poCafe = bule;
+        this.agua = agua;
+        this.fogo = fogo;
+        this.coador = coador;
+        this.bule= bule;
     }
 
     public boolean verificarItens() {

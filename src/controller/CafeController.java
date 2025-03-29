@@ -19,26 +19,26 @@ public class CafeController {
         if(itens.verificarItens()) {
             prepararCafe(); 
         } else {
-            view.exibirMensagem("Não é possível fazer o café, pois faltam alguns itens!");
+            CafeView.exibirMensagem("Não é possível fazer o café, pois faltam alguns itens!");
         }
 
 
     }
 
     public void prepararCafe() {
-        view.exibirMensagem("Passo 1: Colocando a água para ferver...");
+    CafeView.exibirMensagem("Passo 1: Colocando a água para ferver...");
         Utilitarios.aguarde(1000);
 
-        view.exibirMensagem("Passo 2: Aguardando a água ferver...");
+        CafeView.exibirMensagem("Passo 2: Aguardando a água ferver...");
         Utilitarios.aguarde(1000);
 
-        view.exibirMensagem("Passo 3: Colocando o pó de café no coador...");
+        CafeView.exibirMensagem("Passo 3: Colocando o pó de café no coador...");
         Utilitarios.aguarde(1000);
 
-        view.exibirMensagem("Passo 4: Coando o café...");
+        CafeView.exibirMensagem("Passo 4: Coando o café...");
         Utilitarios.aguarde(1000);
 
-        view.exibirMensagem("Passo 5: Café pronto! Aproveite!\n😎😉")
+        CafeView.exibirMensagem("Passo 5: Café pronto! Aproveite!\n😎😉");
     }
 
 }
